@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Fm_pj.Model;
+﻿namespace Fm_pj.Model;
 
 public class LineupModel
 {

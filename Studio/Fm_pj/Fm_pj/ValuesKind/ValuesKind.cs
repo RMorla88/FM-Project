@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Fm_pj.ValuesKind;
+﻿namespace Fm_pj.ValuesKind;
 
 public class AttributeInt
 {

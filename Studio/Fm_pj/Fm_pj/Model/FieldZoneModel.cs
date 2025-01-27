@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Fm_pj.Model;
+﻿namespace Fm_pj.Model;
 
 public class FieldZoneModel
 {
@@ -30,8 +23,10 @@ public class FieldZoneModel
 		foreach (var player in Players)
 		{
 			AttackBaseValue += player.Attack;
-			BallControlBaseValue += player.BallControl;
-			BallControlBaseValue += player.Passing;
+			if(player.BallControl > player.Passing)
+				BallControlBaseValue += player.BallControl;
+			else
+				BallControlBaseValue += player.Passing;
 			DefensiveBaseValue += player.Defense;
 		}
 
